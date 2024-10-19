@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - Google Developer Groups on Campus: IFHE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <!-- Navbar with GDG on Campus title, logo on the left, and menu on the right -->
+    <div class="navbar">
+        <img src="logo.png" alt="GDG Logo" class="logo">
+        <span>Google Developer Groups on Campus: IFHE</span>
+        <div class="navbar-links">
+            <a href="#leaderboard">Leaderboard</a>
+        </div>
+    </div>
+</header>
+
+<!-- Scrolling Notice -->
+<div class="scrolling-notice">
+    <marquee behavior="scroll" direction="left">
+        📢 Notice: The deadline for the Gen AI Study Jam is November 1st! Don't miss it!
+    </marquee>
+</div>
+
+<!-- Leaderboard Table -->
+<div class="leaderboard-container">
+    <h2>GEN AI STUDY JAM LEADER BOARD</h2>
+    
+    <div class="info-boxes">
+        <div class="info-box" id="badgesCompleted">People Completed All 15 Badges: 0</div>
+        <div class="info-box" id="gamesCompleted">People Completed Arcade Game: 0</div>
+    </div>
+    
+    <!-- Search Input -->
+    <input type="text" id="searchInput" placeholder="Search by Name" onkeyup="filterTable()">
+    
+    <table id="leaderboard">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Access Code Redemption</th>
+                <th>All Skill Badges & Games Completed</th>
+                <th>No. of Skill Badges Completed</th>
+                <th>No. of Arcade Games Completed</th>
+                <th>Special Badges</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- This will be populated dynamically by JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <img src="logo.png" alt="GDG Logo" width="100">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
